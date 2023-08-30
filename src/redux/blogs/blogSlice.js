@@ -13,7 +13,7 @@ const blogSlice =createSlice({
             state.blogs = action.payload.data
         })
         builder.addCase(addBlogs.fulfilled, (state, action) =>{
-            console.log("bolgSlice",action.payload)
+            console.log("blogSlice",action.payload)
             state.blogs.push(action.payload)
         })
 
